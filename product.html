@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карточка товара — ShopProject</title>
+  <meta name="description" content="Карточка товара: описание, цена и таблица характеристик.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a> / <a href="catalog.html">Каталог</a> / <span>Товар 1</span>
+    </nav>
+    <article class="product-page">
+      <div class="product-page__image" role="img" aria-label="Изображение товара 1"></div>
+      <div class="product-page__info">
+        <h1 class="product-page__title">Товар 1</h1>
+        <p class="product-page__description">Подробное описание учебного товара: назначение, особенности и комплектация. Текст-заглушка для демонстрации страницы карточки.</p>
+        <p class="product-page__price">1000 ₽</p>
+        <a class="button" href="order.html">Оставить заявку</a>
+      </div>
+    </article>
+
+    <section class="section">
+      <table class="specs">
+        <caption class="specs__caption">Характеристики товара</caption>
+        <thead>
+          <tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Артикул</th><td>SP-001</td></tr>
+          <tr><th scope="row">Категория</th><td>Аксессуары</td></tr>
+          <tr><th scope="row">Вес</th><td>300 г</td></tr>
+          <tr><th scope="row">Гарантия</th><td>12 месяцев</td></tr>
+          <tr><th scope="row">Доставка</th><td>1–3 дня</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+      <p><a class="site-footer__link" href="contacts.html">Контакты</a> · <a class="site-footer__link" href="order.html">Оставить заявку</a></p>
+    </div>
+  </footer>
+
+  <a class="back-to-top" href="#top" aria-label="Наверх">↑</a>
+</body>
+</html>
