@@ -58,3 +58,30 @@ if (orderForm) {
         }
     });
 }
+
+
+// Если изображение товара не загрузилось, показываем локальную заглушку.
+document.querySelectorAll('.product-card__image, .product-detail__image').forEach((image) => {
+    image.addEventListener('error', () => {
+        if (image.dataset.fallbackApplied === 'true') {
+            return;
+        }
+
+        image.dataset.fallbackApplied = 'true';
+        image.src = 'images/product-placeholder.svg';
+        image.alt = 'Изображение товара временно недоступно';
+    });
+});
+
+
+// Показываем четвёртый отзыв по кнопке и прокручиваем страницу к нему.
+const showFourthReviewButton = document.getElementById('show-fourth-review');
+const fourthReview = document.getElementById('review-four');
+
+if (showFourthReviewButton && fourthReview) {
+    showFourthReviewButton.addEventListener('click', () => {
+        fourthReview.hidden = false;
+        fourthReview.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        showFourthReviewButton.disabled = true;
+    });
+}

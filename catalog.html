@@ -6,6 +6,7 @@
     <meta name="description" content="Каталог товаров учебного интернет-магазина.">
     <title>Каталог товаров — Учебный интернет-магазин</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -15,7 +16,7 @@
                 <ul class="site-nav__list">
                     <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
                     <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товары</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
@@ -75,27 +76,74 @@
                 <h2 class="catalog-products__title">Список товаров</h2>
                 <div class="products-grid">
                     <article class="product-card product-card--featured">
-                        <span class="product-card__badge">Хит</span>
-                        <h3 class="product-card__title">Товар 1</h3>
-                        <p class="product-card__description">Краткое описание учебного товара</p>
-                        <p class="product-card__price">Цена: 1000 ₽</p>
-                        <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+                        <span class="product-card__badge">НОВИНКА</span>
+                        <img class="product-card__image" src="images/images-2.jpeg" alt="Иллюстрация смартфона iPhone 18 Pro" width="640" height="420" loading="lazy">
+                        <h3 class="product-card__title">iPhone 18 Pro</h3>
+                        <p class="product-card__description">Флагманский смартфон Apple на чипе A20 Pro</p>
+                        <p class="product-card__price">Цена: от 115 000 ₽</p>
+                        <a class="button button--feeautered product-card__button" href="product.html#product-1">Подробнее</a>
                     </article>
                     <article class="product-card product-card--discount">
-                        <span class="product-card__badge">Скидка</span>
-                        <h3 class="product-card__title">Товар 2</h3>
-                        <p class="product-card__description">Краткое описание учебного товара</p>
-                        <p class="product-card__price">Цена: 1500 ₽</p>
-                        <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+                        <span class="product-card__badge">ЛИДЕР ПРОДАЖ</span>
+                        <img class="product-card__image" src="images/images-3.jpeg" alt="Иллюстрация кроссовера Haval F7" width="640" height="420" loading="lazy">
+                        <h3 class="product-card__title">Haval F7</h3>
+                        <p class="product-card__description">Кроссовер с двумя турбомоторами и 7-ступенчатым роботом</p>
+                        <p class="product-card__price">Цена: около 3 100 000 ₽</p>
+                        <a class="button product-card__button button--discount" href="product.html#product-2">Подробнее</a>
+                    </article>
+                    <article class="product-card product-card--sale">
+                        <span class="product-card__badge product-card__badge--sale">Акция</span>
+                        <img class="product-card__image" src="images/images-4.jpeg" alt="Иллюстрация робота-пылесоса Dyson Spot" width="640" height="420" loading="lazy">
+                        <h3 class="product-card__title">Dyson Spot</h3>
+                        <p class="product-card__description">Робот-пылесос с влажной уборкой и встроенным ИИ</p>
+                        <p class="product-card__price">Цена: около 60 000 ₽</p>
+                        <a class="button button--primary product-card__button" href="product.html#product-3">Подробнее</a>
                     </article>
                     <article class="product-card">
-                        <h3 class="product-card__title">Товар 3</h3>
-                        <p class="product-card__description">Краткое описание учебного товара</p>
-                        <p class="product-card__price">Цена: 2000 ₽</p>
-                        <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+                        <img class="product-card__image" src="images/images-4.jpeg" alt="Иллюстрация робота-пылесоса Dyson Spot" width="640" height="420" loading="lazy">
+                        <h3 class="product-card__title">Dyson Spot</h3>
+                        <p class="product-card__description">Робот-пылесос с влажной уборкой и встроенным ИИ</p>
+                        <p class="product-card__price">Цена: около 60 000 ₽</p>
+                        <a class="button button--primary product-card__button" href="product.html#product-3">Подробнее</a>
+                    </article>
+                    <article class="product-card">
+                        <img class="product-card__image" src="images/images-4.jpeg" alt="Иллюстрация робота-пылесоса Dyson Spot" width="640" height="420" loading="lazy">
+                    <h3 class="product-card__title">Dyson Spot</h3>
+                        <p class="product-card__description">Робот-пылесос с влажной уборкой и встроенным ИИ</p>
+                        <p class="product-card__price">Цена: около 60 000 ₽</p>
+                        <a class="button button--primary product-card__button" href="product.html#product-3">Подробнее</a>
+                    </article>
+                    <article class="product-card">
+                        <img class="product-card__image" src="images/images-4.jpeg" alt="Иллюстрация робота-пылесоса Dyson Spot" width="640" height="420" loading="lazy">
+                    <h3 class="product-card__title">Dyson Spot</h3>
+                        <p class="product-card__description">Робот-пылесос с влажной уборкой и встроенным ИИ</p>
+                        <p class="product-card__price">Цена: около 60 000 ₽</p>
+                        <a class="button button--primary product-card__button" href="product.html#product-3">Подробнее</a>
+                    </article>
+                    <article class="product-card">
+                        <img class="product-card__image" src="images/images-4.jpeg" alt="Иллюстрация робота-пылесоса Dyson Spot" width="640" height="420" loading="lazy">
+                    <h3 class="product-card__title">Dyson Spot</h3>
+                        <p class="product-card__description">Робот-пылесос с влажной уборкой и встроенным ИИ</p>
+                        <p class="product-card__price">Цена: около 60 000 ₽</p>
+                        <a class="button button--primary product-card__button" href="product.html#product-3">Подробнее</a>
+                    </article>
+                    <article class="product-card">
+                        <img class="product-card__image" src="images/images-4.jpeg" alt="Иллюстрация робота-пылесоса Dyson Spot" width="640" height="420" loading="lazy">
+                    <h3 class="product-card__title">Dyson Spot</h3>
+                        <p class="product-card__description">Робот-пылесос с влажной уборкой и встроенным ИИ</p>
+                        <p class="product-card__price">Цена: около 60 000 ₽</p>
+                        <a class="button button--primary product-card__button" href="product.html#product-3">Подробнее</a>
+                    </article>
+                    <article class="product-card">
+                        <img class="product-card__image" src="images/images-4.jpeg" alt="Иллюстрация робота-пылесоса Dyson Spot" width="640" height="420" loading="lazy">
+                    <h3 class="product-card__title">Dyson Spot</h3>
+                        <p class="product-card__description">Робот-пылесос с влажной уборкой и встроенным ИИ</p>
+                        <p class="product-card__price">Цена: около 60 000 ₽</p>
+                        <a class="button button--primary product-card__button" href="product.html#product-3">Подробнее</a>
                     </article>
                 </div>
             </section>
+            
         </section>
     </main>
 

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Карточка товара учебного интернет-магазина.">
-    <title>Карточка товара — Учебный интернет-магазин</title>
+    <meta name="description" content="Подробное описание товаров: iPhone 18 Pro, Haval F7, Dyson Spot+Scrub Ai.">
+    <title>Товары — Учебный интернет-магазин</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -15,7 +16,7 @@
                 <ul class="site-nav__list">
                     <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html">Товар</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html">Товары</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
@@ -30,22 +31,32 @@
         <nav class="breadcrumbs" aria-label="Хлебные крошки">
             <a class="breadcrumbs__link" href="index.html">Главная</a>
             <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
-            <span class="breadcrumbs__current">Товар 1</span>
+            <span class="breadcrumbs__current">Товары</span>
         </nav>
 
-        <section class="section product-details">
-            <img class="product-details__image" src="images/product-placeholder.svg" alt="Изображение товара 1" width="480" height="360">
-            <div class="product-details__info">
-                <h1 class="product-details__title">Товар 1</h1>
-                <p>Подробное описание учебного товара.</p>
-                <p class="product-details__price">Цена: 1000 ₽</p>
-                <a class="button button--primary" href="order.html">Оставить заявку</a>
-            </div>
+        <section class="section">
+            <h1 class="section__title">Товары</h1>
+            <p>
+                Подробное описание товаров из каталога. Цены ориентировочные, характеристики
+                собраны из открытых источников, проект учебный.
+            </p>
         </section>
 
-        <section class="section">
+        <article class="product-detail" id="product-1">
+            <img class="product-detail__image" src="images/images-2.jpeg" alt="Иллюстрация смартфона iPhone 18 Pro" width="640" height="420" loading="lazy">
+            <h2 class="product-detail__title">iPhone 18 Pro</h2>
+            <p>Компактный флагман Apple 2026 года на чипе A20 Pro. Главное новшество — основная камера с переменной диафрагмой, благодаря которой вырез Dynamic Island стал меньше. Подходит тем, кому нужен мощный смартфон, который удобно держать в одной руке.</p>
+            <p class="product-detail__price">Цена: от 115 000 ₽ (256 ГБ, ориентировочно)</p>
+            <h3 class="product-detail__subtitle">Особенности</h3>
+            <ul>
+                <li>Чип A20 Pro на 2-нм техпроцессе и обновлённая система охлаждения.</li>
+                <li>Тройная камера: все три модуля по 48 Мп, у основной — переменная диафрагма. Фронтальная камера — 18 Мп.</li>
+                <li>Экран 6,3″ с частотой 120 Гц и пиковой яркостью до 3000 нит.</li>
+                <li>До 36 часов воспроизведения видео на одном заряде.</li>
+                <li>Память от 256 ГБ до 2 ТБ и разъём USB-C версии 3.2.</li>
+            </ul>
             <table class="product-table">
-                <caption class="product-table__caption">Характеристики товара</caption>
+                <caption class="product-table__caption">Характеристики</caption>
                 <thead>
                     <tr>
                         <th class="product-table__th">Параметр</th>
@@ -54,19 +65,201 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="product-table__td">Категория</td>
-                        <td class="product-table__td">Учебный товар</td>
+                        <td class="product-table__td">Производитель</td>
+                        <td class="product-table__td">Apple</td>
                     </tr>
                     <tr>
-                        <td class="product-table__td">Цена</td>
-                        <td class="product-table__td">1000 ₽</td>
+                        <td class="product-table__td">Экран</td>
+                        <td class="product-table__td">6,3″, 120 Гц, до 3000 нит</td>
                     </tr>
                     <tr>
-                        <td class="product-table__td">Наличие</td>
-                        <td class="product-table__td">В наличии</td>
+                        <td class="product-table__td">Процессор</td>
+                        <td class="product-table__td">A20 Pro (2 нм)</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Встроенная память</td>
+                        <td class="product-table__td">256 ГБ, 512 ГБ, 1 ТБ, 2 ТБ</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Основные камеры</td>
+                        <td class="product-table__td">3 × 48 Мп</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Фронтальная камера</td>
+                        <td class="product-table__td">18 Мп</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Разъём</td>
+                        <td class="product-table__td">USB-C (3.2)</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Автономность</td>
+                        <td class="product-table__td">до 36 ч видео</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Размеры</td>
+                        <td class="product-table__td">150 × 71,9 × 8,75 мм</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Вес</td>
+                        <td class="product-table__td">211 г</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Цвета</td>
+                        <td class="product-table__td">чёрный, серебристый, голубой, бургунди</td>
                     </tr>
                 </tbody>
             </table>
+            <a class="button button--primary product-detail__button" href="order.html">Оставить заявку</a>
+        </article>
+
+        <article class="product-detail" id="product-2">
+            <img class="product-detail__image" src="images/images-3.jpeg" alt="Иллюстрация кроссовера Haval F7" width="640" height="420" loading="lazy">
+            <h2 class="product-detail__title">Haval F7</h2>
+            <p>Среднеразмерный кроссовер второго поколения (модельный год 2026). На выбор два бензиновых турбомотора и 7-ступенчатый робот. Подходит для семьи и дальних поездок: пять мест, полный привод у версии с двухлитровым мотором, а навигацией и музыкой можно пользоваться через встроенный Яндекс Авто.</p>
+            <p class="product-detail__price">Цена: 3 099 000 ₽ (версия Elite 2.0, полный привод)</p>
+            <h3 class="product-detail__subtitle">Особенности</h3>
+            <ul>
+                <li>Два мотора: 1,5 л (150 л.с., передний привод) и 2,0 л (192–200 л.с., полный привод).</li>
+                <li>Первый Haval со встроенными сервисами Яндекс Авто: навигация и музыка без смартфона.</li>
+                <li>Аудиосистема с шестью динамиками и телематика HAVAL Connection.</li>
+                <li>Рейлинги на крыше, выдвижные ручки дверей; в части комплектаций — 19″ диски и электропривод багажника.</li>
+            </ul>
+            <table class="product-table">
+                <caption class="product-table__caption">Характеристики</caption>
+                <thead>
+                    <tr>
+                        <th class="product-table__th">Параметр</th>
+                        <th class="product-table__th">Значение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product-table__td">Кузов</td>
+                        <td class="product-table__td">кроссовер, 5 дверей, 5 мест</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Двигатель</td>
+                        <td class="product-table__td">1,5 л, 150 л.с. / 2,0 л, 192–200 л.с.</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Коробка передач</td>
+                        <td class="product-table__td">робот, 7 ступеней</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Привод</td>
+                        <td class="product-table__td">передний (1,5 л) / полный (2,0 л)</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Расход (смешанный)</td>
+                        <td class="product-table__td">7,3 л/100 км (1,5 л) / 8,5–8,6 л/100 км (2,0 л)</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Разгон до 100 км/ч</td>
+                        <td class="product-table__td">10,9 с (1,5 л) / 8,7–9,4 с (2,0 л)</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Модельный год</td>
+                        <td class="product-table__td">2026</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Цена Elite 2.0, полный привод</td>
+                        <td class="product-table__td">3 099 000 ₽</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="button button--primary product-detail__button" href="order.html">Оставить заявку</a>
+        </article>
+
+        <article class="product-detail" id="product-3">
+            <img class="product-detail__image" src="images/images-4.jpeg" alt="Иллюстрация робота-пылесоса Dyson Spot" width="640" height="420" loading="lazy">
+            <h2 class="product-detail__title">Dyson Spot</h2>
+            <p>Флагманский робот-пылесос Dyson с влажной уборкой и встроенным искусственным интеллектом. Камера и двухлинейный лидар распознают около 200 типов объектов, а робот повторяет уборку, пока участок пола не станет чистым. Обработка изображений выполняется на самом устройстве и не уходит в облако.</p>
+            <p class="product-detail__price">Цена: около 60 000 ₽ (ориентировочно)</p>
+            <h3 class="product-detail__subtitle">Особенности</h3>
+            <ul>
+                <li>Сила всасывания до 18 000 Па, на коврах автоматически увеличивается в четыре раза.</li>
+                <li>Двойной лидар и HD-камера сканируют обстановку семь раз в секунду.</li>
+                <li>Чистящий ролик 27 см; при влажной уборке он поднимается на 10 мм над коврами.</li>
+                <li>Циклонная система без одноразовых мешков и док-станция с самоочисткой.</li>
+            </ul>
+            <table class="product-table">
+                <caption class="product-table__caption">Характеристики</caption>
+                <thead>
+                    <tr>
+                        <th class="product-table__th">Параметр</th>
+                        <th class="product-table__th">Значение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product-table__td">Тип</td>
+                        <td class="product-table__td">робот-пылесос с влажной уборкой</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Мощность всасывания</td>
+                        <td class="product-table__td">до 18 000 Па</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Навигация</td>
+                        <td class="product-table__td">двухлинейный лидар и HD-камера</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Распознавание</td>
+                        <td class="product-table__td">около 200 типов объектов</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Чистящий ролик</td>
+                        <td class="product-table__td">27 см</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Размеры</td>
+                        <td class="product-table__td">373 × 370 × 110 мм</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Автономность</td>
+                        <td class="product-table__td">до 200 мин (до 240 м²)</td>
+                    </tr>
+                    <tr>
+                        <td class="product-table__td">Сбор пыли</td>
+                        <td class="product-table__td">циклонная система, без мешков</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="button button--primary product-detail__button" href="order.html">Оставить заявку</a>
+        </article>
+
+        <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+            <h2 class="section__title" id="reviews-title">Отзывы покупателей</h2>
+            <div class="reviews__grid">
+                <article class="review-card">
+                    <div class="review-card__top"><h3 class="review-card__author">Александр</h3><span class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</span></div>
+                    <p class="review-card__product">iPhone 18 Pro</p>
+                    <p class="review-card__text">Понравился экран и плавная работа интерфейса. Удобно, что основные характеристики собраны на одной странице.</p>
+                    <time class="review-card__date" datetime="2026-10-15">15 октября 2026</time>
+                </article>
+                <article class="review-card">
+                    <div class="review-card__top"><h3 class="review-card__author">Мария</h3><span class="review-card__rating" aria-label="Оценка: 4 из 5">★★★★☆</span></div>
+                    <p class="review-card__product">Haval F7</p>
+                    <p class="review-card__text">Подробное описание помогло быстро разобраться в различиях комплектаций. Хотелось бы больше фотографий автомобиля.</p>
+                    <time class="review-card__date" datetime="2026-10-12">12 октября 2026</time>
+                </article>
+                <article class="review-card">
+                    <div class="review-card__top"><h3 class="review-card__author">Дмитрий</h3><span class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</span></div>
+                    <p class="review-card__product">Dyson Spot</p>
+                    <p class="review-card__text">Удобная структура карточки: описание, особенности и таблица характеристик находятся в одном месте.</p>
+                    <time class="review-card__date" datetime="2026-10-08">8 октября 2026</time>
+                </article>
+                <article class="review-card" id="review-four" hidden>
+                    <div class="review-card__top"><h3 class="review-card__author">Екатерина</h3><span class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</span></div>
+                    <p class="review-card__product">Dyson Spot</p>
+                    <p class="review-card__text">Понравилось, что робот сам ориентируется в комнате и помогает поддерживать чистоту. Описание на сайте понятное, основные характеристики легко найти.</p>
+                    <time class="review-card__date" datetime="2026-10-20">20 октября 2026</time>
+                </article>
+            </div>
+            <div class="reviews__controls">
+                <button class="button button--primary" id="show-fourth-review" type="button" aria-controls="review-four">Показать ещё отзывы</button>
+            </div>
         </section>
     </main>
 
